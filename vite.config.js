@@ -7,5 +7,5 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base: '/Events-admin/'
+  base: '/Events/'
 })
