@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";
@@ -128,12 +129,12 @@ const FAQ = () => {
             <p className="text-xl mb-8 max-w-2xl mx-auto">
               Our team is here to help you plan your perfect event
             </p>
-            <a 
-              href="/contact" 
+            <Link
+              to="/contact"
               className="inline-block bg-white text-purple-600 hover:bg-purple-100 font-bold py-4 px-10 rounded-full transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               Contact Us
-            </a>
+            </Link>
           </motion.div>
         </div>
       </section>
